@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1e3c72">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phendelver and Below: Scopa il diavolo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="black-layer">
+        <div class="intro-container">
+            <h1 class="fade-in" id="welcome-text">Benvenuto</h1>
+            <h2 class="fade-in hidden" id="question-text">Come ti chiami?</h2>
+            <div id="buttons-container" class="hidden">
+              <button onclick="goToPage('Asriel.html')" class="fade-in button" id="asriel">Asriel</button>
+              <button onclick="goToPage('Auryn.html')" class="fade-in button" id="auryn">Auryn</button>
+              <button onclick="goToPage('Ravel.html')" class="fade-in button" id="ravel">Ravel</button>
+              <button onclick="goToPage('Ruben.html')" class="fade-in button" id="ruben">Ruben</button>
+            </div>
+          </div>
+          <script src="script2.js"></script>
+    </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .then(() => console.log("Service Worker Registered"));
+      }
+    </script>
+</body>
+</html>
