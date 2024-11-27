@@ -53,6 +53,7 @@ body {
   
   /* Fade-in animation */
   .fade-in {
+    display: block;
     opacity: 0;
     animation: fade-in 2s forwards;
   }

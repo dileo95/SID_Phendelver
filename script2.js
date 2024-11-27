@@ -12,17 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Show "Come ti chiami?" after 3 seconds
     setTimeout(() => {
       questionText.classList.remove('hidden');
-      questionText.style.display = 'block';
+      //questionText.style.display = 'block';
     }, 3000);
   
     // Show buttons one by one after 4 seconds
     const buttons = buttonsContainer.querySelectorAll('.button');
     setTimeout(() => {
       buttonsContainer.classList.remove('hidden');
-      buttonsContainer.style.display = 'block';
+      //buttonsContainer.style.display = 'block';
       buttons.forEach((button, index) => {
         setTimeout(() => {
-          button.style.display = 'block';
+          //button.style.display = 'block';
         }, index * 500); // Stagger each button's appearance by 500ms
       });
     }, 4000);

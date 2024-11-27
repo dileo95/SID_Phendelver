@@ -18,6 +18,7 @@ container.addEventListener('touchend', () => {
 
 function handleTouchMove(touch) {
   const rect = container.getBoundingClientRect();
+  const foilOverlay = document.querySelector('.foil-overlay');
   const x = touch.clientX - rect.left; // Touch X position relative to the container
   const y = touch.clientY - rect.top; // Touch Y position relative to the container
 
@@ -28,6 +29,7 @@ function handleTouchMove(touch) {
   const rotateY = (x - centerX) / 10;
 
   card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  foilOverlay.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
 }
 
 function back() {
