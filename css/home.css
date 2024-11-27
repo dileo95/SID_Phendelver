@@ -9,7 +9,7 @@ body {
     /*background: linear-gradient(135deg, #1e3c72, #2a5298);*/
     color: white;
     overflow: hidden;
-    background-image: url('./ShatteredAltArt2.jpg');
+    background-image: url('../assets/img/ShatteredAltArt2.jpg');
   }
   
   /* Container for content */
@@ -136,14 +136,14 @@ body {
   }
 
   #asriel {
-    background: url(Asriel-eyes.png);
+    background: url(../assets/img/Asriel-eyes.png);
     background-size: cover;
     height: 120px;
     font-size: 30px;
   }
 
   #auryn {
-    background: url(Auryn-eyes.png);
+    background: url(../assets/img/Auryn-eyes.png);
     background-size: cover;
     height: 120px;
     color: black;
@@ -151,14 +151,14 @@ body {
   }
 
   #ravel {
-    background: url(Ravel-eyes.png);
+    background: url(../assets/img/Ravel-eyes.png);
     background-size: cover;
     height: 120px;
     font-size: 30px;
   }
 
   #ruben {
-    background: url(Ruben-eyes.png);
+    background: url(../assets/img/Ruben-eyes.png);
     color: black;
     background-size: cover;
     height: 120px;

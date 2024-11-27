@@ -78,22 +78,22 @@ dialogOverlay.addEventListener('click', (e) => {
 var buttonSelected;
 // Mostra la dialog
 openDialogBtn1.addEventListener('click', () => {
-  dialog.style.background = 'url("Asriel-blur.png")'
+  dialog.style.background = 'url("assets/img/Asriel-blur.png")'
   dialogOverlay.style.display = 'flex';
   buttonSelected = openDialogBtn1.getAttribute('data-target');
 });
 openDialogBtn2.addEventListener('click', () => {
-  dialog.style.background = 'url("Auryn-blur.png")'
+  dialog.style.background = 'url("assets/img/Auryn-blur.png")'
   dialogOverlay.style.display = 'flex';
   buttonSelected = openDialogBtn2.getAttribute('data-target');
 });
 openDialogBtn3.addEventListener('click', () => {
-  dialog.style.background = 'url("Ravel-blur.png")'
+  dialog.style.background = 'url("assets/img/Ravel-blur.png")'
   dialogOverlay.style.display = 'flex';
   buttonSelected = openDialogBtn3.getAttribute('data-target');
 });
 openDialogBtn4.addEventListener('click', () => {
-  dialog.style.background = 'url("Ruben-blur.png")'
+  dialog.style.background = 'url("assets/img/Ruben-blur.png")'
   dialogOverlay.style.display = 'flex';
   buttonSelected = openDialogBtn4.getAttribute('data-target');
 });
@@ -110,7 +110,7 @@ submitPinBtn.addEventListener('click', () => {
     dialogOverlay.style.display = 'none';
     disableScroll();
     // Reindirizzamento all'HTML successivo
-    window.location.href = buttonSelected;
+    window.location.href = "html/"+ buttonSelected;
   } else {
     alert("PIN errato! Riprova.");
   }

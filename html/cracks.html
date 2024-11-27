@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crepature su Div</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e6d3a3; /* Sfondo "papyrus" */
+    }
+
+    /* Div genitore */
+    .parent {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      background: #c4a484; /* Colore del papiro */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; /* Nasconde qualsiasi cosa oltre i bordi */
+    }
+
+    /* Div figlio crepato */
+    .cracked {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #d4b588, #e7cfa9); /* Texture del div */
+      mask-image: url('cracks.svg'); /* Applicazione maschera SVG */
+      mask-repeat: no-repeat;
+      mask-size: cover;
+      -webkit-mask-image: url('cracks.svg'); /* Supporto Safari */
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="cracked"></div>
+  </div>
+</body>
+</html>

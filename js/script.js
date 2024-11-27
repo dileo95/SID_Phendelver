@@ -44,9 +44,11 @@ function handleTouchMove(touch) {
   const rotateY = (x - centerX) / 10;
 
   card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-  foilOverlay.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
+  //if (foilOverlay && xPercent && yPercent) {
+   // foilOverlay.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
+  //}
 }
 
 function back() {
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
 }
