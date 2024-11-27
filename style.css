@@ -35,6 +35,10 @@ body {
   font-family: myFirstFont;
 }
 
+.dialog button {
+  font-family: myFirstFont;
+}
+
 .back {
   margin-left: 20px;
   line-height: 40px;

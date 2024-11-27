@@ -15,14 +15,30 @@
             <h1 class="fade-in" id="welcome-text">Benvenuto</h1>
             <h2 class="fade-in hidden" id="question-text">Dimmi, qual è il tuo nome?</h2>
             <div id="buttons-container" class="hidden">
-              <button onclick="goToPage('Asriel.html')" class="fade-in button" id="asriel">Asriel</button>
-              <button onclick="goToPage('Auryn.html')" class="fade-in button" id="auryn">Auryn</button>
-              <button onclick="goToPage('Ravel.html')" class="fade-in button" id="ravel">Ravel</button>
-              <button onclick="goToPage('Ruben.html')" class="fade-in button" id="ruben">Ruben</button>
+              <button data-target="Asriel.html" class="fade-in button" id="asriel">Asriel</button>
+              <button data-target="Auryn.html" class="fade-in button" id="auryn">Auryn</button>
+              <button data-target="Ravel.html" class="fade-in button" id="ravel">Ravel</button>
+              <button data-target="Ruben.html" class="fade-in button" id="ruben">Ruben</button>
             </div>
           </div>
-          <script src="script2.js"></script>
+          
     </div>
+
+      <!-- Dialog -->
+  <div class="dialog-overlay" id="dialog-overlay" style="display: none;">
+    <div class="dialog" id="dialog">
+      <h2>Inserisci il PIN</h2>
+      <div class="pin-inputs">
+        <input class="pin-input" type="password" maxlength="1" id="digit-1" />
+        <input class="pin-input" type="password" maxlength="1" id="digit-2" />
+        <input class="pin-input" type="password" maxlength="1" id="digit-3" />
+        <input class="pin-input" type="password" maxlength="1" id="digit-4" />
+      </div>
+      <button id="submit-pin">Conferma</button>
+      <button id="cancel-dialog" class="cancel">Annulla</button>
+    </div>
+  </div>
+  <script src="script2.js"></script>
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
