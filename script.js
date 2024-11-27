@@ -1,6 +1,8 @@
 const card = document.querySelector('.card');
 const container = document.querySelector('.card-container');
 
+document.body.style.overflow = "hidden"
+
 // Adjust the tilt effect based on touch movement
 container.addEventListener('touchstart', (e) => {
   handleTouchMove(e.touches[0]); // Initialize tilt on touch
@@ -15,6 +17,19 @@ container.addEventListener('touchmove', (e) => {
 container.addEventListener('touchend', () => {
   card.style.transform = 'rotateX(0deg) rotateY(0deg)';
 });
+
+let lastScrollY = 0;
+
+// Funzione per disabilitare lo scroll
+function disableScroll() {
+  lastScrollY = window.scrollY; // Salva la posizione corrente dello scroll
+  document.documentElement.style.position = 'fixed';
+  document.documentElement.style.top = `-${lastScrollY}px`; // Blocca la posizione
+  document.documentElement.style.width = '100%';
+  document.documentElement.style.height = '100%';
+}
+
+disableScroll();
 
 function handleTouchMove(touch) {
   const rect = container.getBoundingClientRect();

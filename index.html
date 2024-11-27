@@ -29,10 +29,10 @@
     <div class="dialog" id="dialog">
       <h2>Inserisci il PIN</h2>
       <div class="pin-inputs">
-        <input class="pin-input" type="password" maxlength="1" id="digit-1" />
-        <input class="pin-input" type="password" maxlength="1" id="digit-2" />
-        <input class="pin-input" type="password" maxlength="1" id="digit-3" />
-        <input class="pin-input" type="password" maxlength="1" id="digit-4" />
+        <input class="pin-input" type="password" pattern="[0-9]*" inputmode="numeric" maxlength="1" id="digit-1" />
+        <input class="pin-input" type="password" pattern="[0-9]*" inputmode="numeric" maxlength="1" id="digit-2" />
+        <input class="pin-input" type="password" pattern="[0-9]*" inputmode="numeric" maxlength="1" id="digit-3" />
+        <input class="pin-input" type="password" pattern="[0-9]*" inputmode="numeric" maxlength="1" id="digit-4" />
       </div>
       <button id="submit-pin">Conferma</button>
       <button id="cancel-dialog" class="cancel">Annulla</button>
