@@ -9,6 +9,7 @@ body {
     /*background: linear-gradient(135deg, #1e3c72, #2a5298);*/
     color: white;
     overflow: hidden;
+    background-image: url('./ShatteredAltArt2.jpg');
   }
   
   /* Container for content */
@@ -45,6 +46,7 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    text-align: start;
   }
   
   .button:hover {

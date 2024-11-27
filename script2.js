@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const welcomeText = document.getElementById('welcome-text');
     const questionText = document.getElementById('question-text');
     const buttonsContainer = document.getElementById('buttons-container');
+    const body = document.body;
   
     // Show "Benvenuto" after 1 second
     setTimeout(() => {
