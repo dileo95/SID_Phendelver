@@ -110,7 +110,7 @@ submitPinBtn.addEventListener('click', () => {
     dialogOverlay.style.display = 'none';
     disableScroll();
     // Reindirizzamento all'HTML successivo
-    window.location.href = "html/"+ buttonSelected;
+    window.location.href = "html/Home-"+ buttonSelected;
   } else {
     alert("PIN errato! Riprova.");
   }
