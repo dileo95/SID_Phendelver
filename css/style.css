@@ -153,3 +153,13 @@ body {
   80% {top:-120%;left:-120%;}
   0%, 20%, 40% {left:100%;top:100%;}
 }*/
+
+#modifier {
+  font-size: 25px;
+  width: 68px;
+  text-align: center;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
