@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1e3c72">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phendelver and Below: Scopa il diavolo</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home.css">
+</head>
+<body class="body2">
+  <div class="black-eye-extern">
+    
+  </div>
+  <div class="black-eye-middle"></div>
+  <!--<div class="black-eye-intern"></div>-->
+    <div class="black-layer" style="margin-right: -3px;">
+      <span style="position: absolute; top:5px; right: 5px; font-size: small;">v.0.0.2</span>
+        <div class="intro-container">
+            <h1 class="fade-in" id="welcome-text" style="color: rgb(159, 19, 19);">Benvenuto</h1>
+            <!--<h2 class="fade-in hidden" id="question-text">Dimmi, qual è il tuo nome?</h2>-->
+            <div id="buttons-container" class="hidden">
+              <button onclick="goToDiary()" class="fade-in button" id="diary" style="margin-top: 150px;">Diario di viaggio</button>
+                <button data-target="Ravel.html" class="fade-in button" id="ravel2"></button>
+                <button data-target="Ruben.html" class="fade-in button" id="ruben2"></button>
+              <button data-target="Asriel.html" class="fade-in button" id="asriel2"></button>
+              <button data-target="Auryn.html" class="fade-in button" id="auryn2"></button>
+              
+              
+              <!--<h2 class="fade-in hidden">Oppure vuoi consultarlo?</h2>
+              <button onclick="goToDiary()" class="fade-in button" id="diary">Diario di viaggio</button>-->
+            </div>
+          </div>
+          
+    </div>
+
+      <!-- Dialog -->
+  <div class="dialog-overlay" id="dialog-overlay" style="display: none;">
+    <div class="dialog" id="dialog">
+      <h2>Inserisci il PIN</h2>
+      <div class="pin-inputs">
+        <input class="pin-input" type="password" pattern="[0-9]*" inputmode="numeric" maxlength="1" id="digit-1" />
+        <input class="pin-input" type="password" pattern="[0-9]*" inputmode="numeric" maxlength="1" id="digit-2" />
+        <input class="pin-input" type="password" pattern="[0-9]*" inputmode="numeric" maxlength="1" id="digit-3" />
+        <input class="pin-input" type="password" pattern="[0-9]*" inputmode="numeric" maxlength="1" id="digit-4" />
+      </div>
+      <button id="submit-pin">Conferma</button>
+      <button id="cancel-dialog" class="cancel">Annulla</button>
+    </div>
+  </div>
+  <script src="./js/intro.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .then(() => console.log("Service Worker Registered"));
+      }
+    </script>
+</body>
+</html>

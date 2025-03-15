@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/gallery.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Galleria Immagini</title>
+</head>
+<body style="overflow: scroll;">
+
+    <div class="header">
+        <div class="header-left"></div>
+        <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 40px; background: transparent">
+          <h1 style="line-height: 40px; text-align: center; margin: 0;">
+            Galleria immagini
+          </h1>
+        </div>
+        <div class="header-right"></div>
+        <button class="back" style="position: absolute;"  onclick="window.location.href = './Diary.html'">
+          <img src="../assets/img/back-arrow.png" style="width: 20px; margin-top: 10px;" />
+        </button>
+      </div>
+  <div class="gallery" style="padding: 80px 20px;background: #3c397124">
+    <img src="../assets/img/Screenshot_2024-12-17_alle_11.52.33.png" alt="Image 1" class="gallery-image">
+    <img src="../assets/img/Screenshot_2024-12-17_alle_13.00.08.png" alt="Image 2" class="gallery-image">
+    <img src="../assets/img/Screenshot_2024-12-17_alle_18.41.17.png" alt="Image 3" class="gallery-image">
+    <img src="../assets/img/diary.jpg" alt="Image 4" class="gallery-image">
+    <img src="../assets/img/ruben-art.jpg" alt="Image 5" class="gallery-image">
+    <img src="../assets/img/auryn copia (1).jpg" alt="Image 6" class="gallery-image">
+    <img src="../assets/img/ravel copia (1).jpg" alt="Image 7" class="gallery-image">
+    <img src="../assets/img/ASRIEL_pact of the blade.png" alt="Image 8" class="gallery-image">
+    <img src="../assets/img/sketches.png" alt="Image 9" class="gallery-image">
+
+    <!-- Aggiungi altre immagini -->
+  </div>
+
+  <!-- Overlay per l'immagine selezionata -->
+  <div class="image-overlay hidden" id="imageOverlay">
+    <img src="" alt="Selected Image" class="overlay-image" id="overlayImage">
+  </div>
+
+  <script src="../js/gallery.js"></script>
+</body>
+</html>

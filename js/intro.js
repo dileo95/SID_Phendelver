@@ -130,5 +130,9 @@ document.querySelectorAll('.pin-input').forEach((input, index, inputs) => {
   });
 });
 
+function goToDiary() {
+  window.location.href = "html/Diary.html"
+}
+
 
 //}

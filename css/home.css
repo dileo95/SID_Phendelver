@@ -1,15 +1,50 @@
 /* Base styles */
 body {
     margin: 0;
-    /*font-family: Arial, sans-serif;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    /*background: linear-gradient(135deg, #1e3c72, #2a5298);*/
+    height: 100%;
+    min-height: 100vh;
     color: white;
-    overflow: hidden;
-    background-image: url('../assets/img/ShatteredAltArt2.jpg');
+    overflow: scroll;
+    background-image: url('../assets/img/sfondo_portrait.png');
+  }
+
+  .body2 {
+    overflow: hidden !important;
+    background-image: url('../assets/img/dawn.jpg');
+    background-size: cover;
+  }
+
+  .black-eye-extern {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top:-200px;
+    background: black;
+    left: calc(50%-200px);
+    border-radius: 200px;
+  }
+
+  .black-eye-middle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top:-150px;
+    background: #fde34c;
+    left: calc(50%-150px);
+    border-radius: 150px;
+  }
+
+  .black-eye-intern {
+    position: absolute;
+    width: 100px;
+    height: 266px;
+    top:-150px;
+    background: black;
+    left: calc(50%-50px);
+    border-radius: 150px;
   }
   
   /* Container for content */
@@ -98,6 +133,7 @@ body {
     background-color: #0a01004e;
     width: 100%;
     height: 100%;
+    min-height: 100vh;
   }
 
   #question-text {
@@ -158,7 +194,62 @@ body {
   }
 
   #ruben {
-    background: url(../assets/img/Ruben-eyes.png);
+    background: url(../assets/img/Ruben-eyes.jpg);
+    background-size: cover;
+    height: 120px;
+    font-size: 30px;
+  }
+
+
+  #asriel2 {
+    background: url(../assets/img/asriel.png);
+    background-size: cover;
+    height: 120px;
+    font-size: 30px;
+    left: 50%;
+    width: 265px;
+    height: 300px;
+    position: absolute;
+    bottom: -20px;
+  }
+
+  #auryn2 {
+    background: url(../assets/img/auryn-lateral.png);
+    background-size: cover;
+    height: 300px;
+    color: black;
+    font-size: 30px;
+
+    left: 75%;
+    width: 287px;
+    position: absolute;
+    bottom: -20px;
+  }
+
+  #ravel2 {
+    background: url(../assets/img/ravel-lateral.png);
+    background-size: cover;
+    height: 300px;
+    font-size: 30px;
+    width: 338px;
+    left: 0;
+    position: absolute;
+    bottom: -20px;
+  }
+
+  #ruben2 {
+    background: url(../assets/img/ruben-lateral.png);
+    background-size: cover;
+    height: 300px;
+    width: 170px;
+    left: 25%;
+    font-size: 30px;
+    position: absolute;
+    bottom: -20px;
+  }
+
+  #diary {
+    background: url(../assets/img/diary.jpg);
     color: black;
     background-size: cover;
     height: 120px;
