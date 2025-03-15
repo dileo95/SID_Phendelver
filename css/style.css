@@ -24,6 +24,14 @@ p {
   font-size: 20px;
 }
 
+li {
+  font-size: 20px;
+}
+
+div {
+  font-size: 20px;
+}
+
 /*body.no-scroll {
   overflow: hidden;
   position: fixed;
